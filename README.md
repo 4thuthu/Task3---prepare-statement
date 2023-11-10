@@ -1,26 +1,31 @@
 # Task3-Prepare statement
+## Ping
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/d3498f2c-fe0b-4ed6-a170-4cb80ae7a3d7)
 
 
-1. Form đăng nhập
-   
-   ![image](https://github.com/4thuthu/task-3-fixed/assets/146660348/9f4dc315-7985-43c4-93c1-c563de19d9f6)
-   
-   Với câu truy vấn này, ta có thể nhập username là `admin'-- ` để bỏ qua truy vấn password và đăng nhập với tư cách admin.
-    Để ngăn kẻ tấn công can thiệp vào câu truy vấn, dùng Prepare Statement.
-2. Form đăng kí
+Lệnh ping chặn kí tự `&`, có thể dùng kí tự `|` để thực thi thêm một lệnh phía sau:
 
-   ![image](https://github.com/4thuthu/task-3-fixed/assets/146660348/efccdb25-0f61-487e-8a6c-cac8b9afb1a3)
 
-   Ở câu truy vấn này, kẻ tấn công có thể lợi dụng thông báo thông báo trả về để hiển thị mật khẩu của user khác bằng cách nhập username là `' UNION SELECT 1 ,R_pass,1 FROM users WHERE R_name = 'admin'--  `.
-   ![image](https://github.com/4thuthu/task-3-fixed/assets/146660348/b3e1600f-008a-4817-bec9-5427635a7503)
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/5dffc204-368f-4994-9321-02272c71712f)
 
-  Để tránh điều này, hàm MD5 để mã hóa mật khẩu và thông báo không nên chứa dữ liệu từ Database -> xóa biến $exist_name ra khỏi thông báo. Dùng Prepare Statement để ngăn việc tiêm SQL.
+## Tracert
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/a41ac272-4149-436b-b3f7-33189d63cebc)
 
-3. Trang home
 
-   ![image](https://github.com/4thuthu/task-3-fixed/assets/146660348/0ffe60b6-1202-49ea-9753-ccd29035a3bd)
+Ở đây chặn kí tự `&` và cụm `secret`. Tương tự như trên, dùng `|dir d:\` để xem nội dung ổ D.
 
-   Ở trang này, có thể thay đổi cookie để làm thay đổi câu truy vấn và kiểm tra dữ liệu qua thông báo "Welcom".
-   Ví dụ, khi thêm vào cookie `' and SUBSTRING((SELECT R_pass FROM users WHERE R_name = 'admin'), 1, 1) = '1`, thông báo "Welcom" vẫn được hiển thị. Bằng cách này, kẻ tấn công có thể dò ra mật khẩu của `admin`.
-   Để ngăn chèn mã sql, dùng Prepare Statement để ngăn người dùng chèn mã sql.
-   ![image](https://github.com/4thuthu/task-3-fixed/assets/146660348/66cac8d3-1e1d-42c2-b35e-21dd77c03511)
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/5f81d265-b0b2-4182-b7f8-e9b85a42513f)
+
+
+Ta thấy có thư mục "secret". Xem thử bên trong có gì với input `|dir d:\secret`, nhưng cụm "secret" bị chặn nên ta dùng `|dir d:\s"e"cret`.
+
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/26a69479-3ed3-40ae-80e0-1b4a6b141eeb)
+
+
+Dùng lệnh `|type d:\s"e"cret\password.txt` để xem nội dung bên trong  file.
+
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/89b938b1-a4da-4239-92fd-f325b33723ad)
+
