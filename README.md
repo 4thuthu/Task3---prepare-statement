@@ -15,6 +15,12 @@ Nhập `|dir d:\` để xem nội dung ổ đĩa D.
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/b8e2066c-f488-40b7-a2d5-1e912d2c1d86)
 
 
+Để ngăn việc tiêm command, dùng hàm filter_input: `filter_input(INPUT_POST, 'ip', FILTER_VALIDATE_IP)` để kiểm tra ip hợp lệ và lọc các kí tự đặc biệt và dùng hàm escapeshellarg để thoát các kí tự đặc biệt trước khi thực thi command.
+
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/7c8bc0de-ec06-4987-935b-51d5e555445b)
+
+
 
 ## Tracert
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/a41ac272-4149-436b-b3f7-33189d63cebc)
@@ -37,3 +43,8 @@ Dùng lệnh `|type d:\s"ecret\password.txt` để xem nội dung bên trong  fi
 
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/89b938b1-a4da-4239-92fd-f325b33723ad)
 
+
+Lọc input tương tự như ở lệnh Ping:
+
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/c0cddc41-4429-4a56-8ad7-c5917bb1758d)
