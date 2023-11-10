@@ -17,7 +17,7 @@
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
       $ip = filter_input(INPUT_POST, 'ip', FILTER_VALIDATE_IP);
       //echo $ip;   
-      if( $ip == ""){
+      if( $ip == false){
         echo "Nhập ip hợp lệ";
       }else{ 
         $ip = escapeshellarg($ip);
