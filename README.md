@@ -8,6 +8,14 @@ Lệnh ping chặn kí tự `&`, có thể dùng kí tự `|` để thực thi t
 
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/5dffc204-368f-4994-9321-02272c71712f)
 
+
+Nhập `|dir d:\` để xem nội dung ổ đĩa D.
+
+
+![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/b8e2066c-f488-40b7-a2d5-1e912d2c1d86)
+
+
+
 ## Tracert
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/a41ac272-4149-436b-b3f7-33189d63cebc)
 
@@ -18,7 +26,7 @@ Lệnh ping chặn kí tự `&`, có thể dùng kí tự `|` để thực thi t
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/5f81d265-b0b2-4182-b7f8-e9b85a42513f)
 
 
-Ta thấy có thư mục "secret". Xem thử bên trong có gì với input `|dir d:\secret`, nhưng cụm "secret" bị chặn nên ta dùng `|dir d:\s"e"cret`.
+Ta thấy có thư mục "secret". Xem thử bên trong có gì với input `|dir d:\secret`, nhưng cụm "secret" bị chặn nên ta dùng `|dir d:\s"ecret`.
 
 
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/26a69479-3ed3-40ae-80e0-1b4a6b141eeb)
