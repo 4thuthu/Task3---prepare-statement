@@ -32,7 +32,7 @@ Ta thấy có thư mục "secret". Xem thử bên trong có gì với input `|di
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/26a69479-3ed3-40ae-80e0-1b4a6b141eeb)
 
 
-Dùng lệnh `|type d:\s"e"cret\password.txt` để xem nội dung bên trong  file.
+Dùng lệnh `|type d:\s"ecret\password.txt` để xem nội dung bên trong  file.
 
 
 ![image](https://github.com/4thuthu/Task3---prepare-statement/assets/146660348/89b938b1-a4da-4239-92fd-f325b33723ad)
